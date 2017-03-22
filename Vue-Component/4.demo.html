@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Component</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="example">
+    <my-component></my-component>
+    <ass-component></ass-component>
+</div>
+<script>
+    var Child = {
+        template:'<div>A custom component!</div>'
+    }
+    var atr = {
+        template:'<div>11111111111111</div>'
+    }
+
+    new Vue({
+        el:'#example',
+        components:{
+            'my-component':Child,
+            'ass-component':atr
+        }
+    })
+</script>
+</body>
+</html>

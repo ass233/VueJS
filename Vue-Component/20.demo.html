@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>props</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="example">
+    <terms-of-service></terms-of-service>
+</div>
+
+<script>
+    Vue.component('terms-of-service',{
+        template:'\
+        <div v-once>\
+        <h1>Terms of Service</h1>\
+        ...a lot of static content...\
+        </div>\
+        '
+    })
+    new Vue({
+        el:'#example'
+    })
+</script>
+</body>
+</html>

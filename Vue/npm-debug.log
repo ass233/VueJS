@@ -1,0 +1,157 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'vue' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData vue
+8 silly fetchNamedPackageData vue
+9 silly mapToRegistry name vue
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'vue',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'vue',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/vue
+14 verbose request uri https://registry.npmjs.org/vue
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 21:29:09
+17 verbose request id dac4cec4f6ee5658
+18 http request GET https://registry.npmjs.org/vue
+19 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.36.162:443
+20 info attempt registry request try #2 at 21:29:41
+21 http request GET https://registry.npmjs.org/vue
+22 http 200 https://registry.npmjs.org/vue
+23 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"CPTU77IPM2G3QMLH730RSFEPQ"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'content-length': '37193',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 08 Nov 2016 13:29:51 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '225',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-ams4431-AMS',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '2',
+23 verbose headers   'x-timer': 'S1478611791.508698,VS0,VE0',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+24 silly get     etag: '"CPTU77IPM2G3QMLH730RSFEPQ"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '37193',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 08 Nov 2016 13:29:51 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '225',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-ams4431-AMS',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '2',
+24 silly get     'x-timer': 'S1478611791.508698,VS0,VE0',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose get saving vue to C:\Users\北狼\AppData\Roaming\npm-cache\registry.npmjs.org\vue\.cache.json
+26 verbose correctMkdir C:\Users\北狼\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule vue@2.0.5 checking installable status
+40 silly cache add args [ 'vue', null ]
+41 verbose cache add spec vue
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'vue',
+42 silly cache add   scope: null,
+42 silly cache add   name: 'vue',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed vue@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for vue
+45 info addNameTag [ 'vue', 'latest' ]
+46 silly mapToRegistry name vue
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'vue',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   name: 'vue',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/vue
+51 verbose addNameTag registry:https://registry.npmjs.org/vue not in flight; fetching
+52 verbose get https://registry.npmjs.org/vue not expired, no request
+53 silly addNameTag next cb for vue with tag latest
+54 silly addNamed vue@2.0.5
+55 verbose addNamed "2.0.5" is a plain semver version for vue
+56 silly mapToRegistry name vue
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'vue',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   name: 'vue',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri https://registry.npmjs.org/vue
+61 verbose addRemoteTarball https://registry.npmjs.org/vue/-/vue-2.0.5.tgz not in flight; adding
+62 verbose addRemoteTarball [ 'https://registry.npmjs.org/vue/-/vue-2.0.5.tgz',
+62 verbose addRemoteTarball   'b99dc7180a802d1148a508db3d84b52c09b5ca8e' ]
+63 info retry fetch attempt 1 at 21:29:56
+64 info attempt registry request try #1 at 21:29:56
+65 http fetch GET https://registry.npmjs.org/vue/-/vue-2.0.5.tgz
+66 http fetch 200 https://registry.npmjs.org/vue/-/vue-2.0.5.tgz
+67 info retry will retry, error on last attempt: Error: read ECONNRESET
+68 info retry will retry, error on last attempt: Error: read ECONNRESET
+69 silly fetchAndShaCheck shasum b99dc7180a802d1148a508db3d84b52c09b5ca8e
+70 silly rollbackFailedOptional Starting
+71 silly rollbackFailedOptional Finishing
+72 silly runTopLevelLifecycles Starting
+73 silly runTopLevelLifecycles Finishing
+74 silly install printInstalled
+75 verbose stack Error: shasum check failed for C:\Users\北狼\AppData\Local\Temp\npm-4148-9368804d\registry.npmjs.org\vue\-\vue-2.0.5.tgz
+75 verbose stack Expected: b99dc7180a802d1148a508db3d84b52c09b5ca8e
+75 verbose stack Actual:   c6e6ffddd9f837794d2f2f0038216178986ae90f
+75 verbose stack From:     https://registry.npmjs.org/vue/-/vue-2.0.5.tgz
+75 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:25:8
+75 verbose stack     at ReadStream.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\sha\index.js:72:7)
+75 verbose stack     at emitNone (events.js:91:20)
+75 verbose stack     at ReadStream.emit (events.js:185:7)
+75 verbose stack     at endReadableNT (_stream_readable.js:926:12)
+75 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+75 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+76 verbose cwd H:\Vue
+77 error Windows_NT 10.0.14959
+78 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "vue"
+79 error node v6.2.0
+80 error npm  v3.8.9
+81 error shasum check failed for C:\Users\北狼\AppData\Local\Temp\npm-4148-9368804d\registry.npmjs.org\vue\-\vue-2.0.5.tgz
+81 error Expected: b99dc7180a802d1148a508db3d84b52c09b5ca8e
+81 error Actual:   c6e6ffddd9f837794d2f2f0038216178986ae90f
+81 error From:     https://registry.npmjs.org/vue/-/vue-2.0.5.tgz
+82 error If you need help, you may report this error at:
+82 error     <https://github.com/npm/npm/issues>
+83 verbose exit [ 1, true ]

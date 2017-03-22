@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="example">
+    <p>Original message:"{{message}}"</p>
+    <p>Computed reversed message:"{{reversedMessage}}"</p>
+</div>
+<script type="text/javascript">
+    var vm = new Vue({
+        el:'#example',
+        data:{
+            message:'Hello'
+        },
+        computed:{
+            reversedMessage:function () {
+                return this.message.split('').reverse().join()
+            }
+        }
+    })
+</script>
+</body>
+</html>

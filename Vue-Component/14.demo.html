@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>props</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<!--假定my-component组件有下面模板-->
+<div>
+    <h2>I'm the child title</h2>
+    <slot>
+        如果没有分发内容测显示我
+    </slot>
+</div>
+
+<!--父组件模板-->
+<div>
+    <h1>I'm the parent title</h1>
+    <my-component>
+        <p>This is some original content</p>
+        <p>This is some more original content</p>
+    </my-component>
+</div>
+
+<!--渲染结果-->
+<div>
+    <h1>I'm the parent title</h1>
+    <div>
+        <h2>I'm the child title</h2>
+        <p>This is some original content</p>
+        <p>This is some more original content</p>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

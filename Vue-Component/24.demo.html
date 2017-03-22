@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transition</title>
+    <script type="text/javascript" src="vue.js"></script>
+<!--    <style>
+        .slide-fade-enter-action{
+            transition: all .3s ease;
+        }
+        .slide-fade-leave-action{
+            transition: all .8s cubic-bezier(1.0,0.5,0.8,1.0);
+        }
+        .slide-fade-enter, .slide-fade-leave-action{
+            padding-left: 10px;
+            opacity: 0;
+        }
+    </style>-->
+</head>
+<body>
+<div id="example-1">
+    <button @click="show =! show">Toggle render</button>
+    <transition name="slide-fade">
+        <p v-if="show">hello</p>
+    </transition>
+</div>
+
+<script>
+    new Vue({
+        el:'#example-1',
+        data:{
+            show:true
+        }
+    })
+</script>
+</body>
+</html>

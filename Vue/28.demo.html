@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="example">
+    <span>Multiline message is:</span>
+    <p style="white-space: pre">{{message}}</p>
+    <br>
+    <textarea v-model="message" placeholder="add multiple lines" name="" id="" cols="30" rows="10"></textarea>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#example',
+        data:{
+            message:'hello'
+        }
+    })
+</script>
+</body>
+</html>

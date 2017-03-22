@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过滤器</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+
+<div id="example">{{message | capitalize}}</div>
+
+<!--指令-->
+<a v-bind:href="http://www.baidu.com">baidu</a>
+<a v-on:click="doSomething">doSomething</a>
+
+<form v-on:submit.prevent="onSubmit"></form>
+
+<!--缩写-->
+<a v-bind:href="url"></a>
+<a :href="url"></a>
+
+
+<a v-on:click="doSomething"></a>
+<a @click="doSomething"></a>
+
+<script type="text/javascript">
+/*new Vue({
+    el:'#example',
+    filters:{
+        capitalize:function (value) {
+            if (!value) return ''
+            value = value.toString()
+            return value.charAt(0).toUpperCase() + value.slice(1)
+        }
+    }
+})*/
+</script>
+</body>
+</html>
