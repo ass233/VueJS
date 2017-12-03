@@ -14,8 +14,9 @@
         methods:{
             btnClickEvent:function(){
                 alert("先弹出默认的文案");
-                this.$emit('btnClickEvent');
-            }
+                this.$emit('btnClickEvent',this.msg);
+            },
+            
         }
   }
 </script>
